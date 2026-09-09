@@ -12,7 +12,7 @@ Projetação, implementação e diagnóstico de falhas em uma infraestrutura de 
 
 A topologia foi desenhada em uma estrutura hierárquica contendo rede local de clientes, switch core de distribuição L3, switch de acesso e servidores dedicados na DMZ.
 
-![Topologia do Projeto](images/topologia.png)
+![Topologia do Projeto](Projeto_DMZ_DNS_OK-imagem-topologia.png)
 
 ### Tabela de Endereçamento e Interfaces
 
