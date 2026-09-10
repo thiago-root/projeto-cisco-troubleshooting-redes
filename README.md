@@ -28,16 +28,16 @@ A topologia foi desenhada em uma estrutura hierárquica contendo rede local de c
 
 ## ⚙️ Configurações Principais
 
-### Roteamento Inter-VLAN no Switch Core (`SW-CORE-01`)
-```text
-SW-CORE-01> enable
-SW-CORE-01# configure terminal
-SW-CORE-01(config)# ip routing
-SW-CORE-01(config)# interface Vlan1
-SW-CORE-01(config-if)# ip address 192.168.100.1 255.255.255.0
-SW-CORE-01(config-if)# no shutdown
-SW-CORE-01(config-if)# exit
-SW-CORE-01(config)# write memory
+### Roteamento Inter-VLAN no Switch Core (SW-CORE-01)
+
+* **SW-CORE-01> enable**
+* **SW-CORE-01# configure terminal**
+* **SW-CORE-01(config)# ip routing**
+* **SW-CORE-01(config)# interface Vlan1**
+* **SW-CORE-01(config-if)# ip address 192.168.100.1 255.255.255.0**
+* **SW-CORE-01(config-if)# no shutdown**
+* **SW-CORE-01(config-if)# exit**
+* **SW-CORE-01(config)# write memory**
 
 ---
 
@@ -71,5 +71,6 @@ A execução deste laboratório consolidou conceitos fundamentais de arquitetura
 ## 📁 Como Executar este Projeto
 
 1. Faça o clone deste repositório ou baixe o arquivo `.pkt`:
-   ```bash
-   git clone [https://github.com/thiago-root/projeto-cisco-troubleshooting-redes.git](https://github.com/thiago-root/projeto-cisco-troubleshooting-redes.git)
+   `git clone [https://github.com/thiago-root/projeto-cisco-troubleshooting-redes.git](https://github.com/thiago-root/projeto-cisco-troubleshooting-redes.git)`
+2. Abra o arquivo `Projeto_DMZ_DNS_OK.pkt` utilizando o **Cisco Packet Tracer** (versão 8.0 ou superior).
+3. Abra o terminal do `PC-CORP-01` e execute `nslookup www.empresa.local 192.168.100.20` para validar os testes.
